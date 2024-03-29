@@ -1,107 +1,154 @@
+header{
+    display: flex;
+    background-color: black;
+    align-items: center;
+}
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
-/*---------------------------------header------------------------------------------------*/
-header{
+nav{
     display: flex;
-    align-items: center;
-    background-color: #106050;
-}
-nav {
-    display: flex;
-    /*background-color: brown;*/
-    justify-content: space-between;
+    /* background-color: rgb(226, 93, 138); */
     width: 85%;
-    margin: auto;
-}
-nav ul {
-  display: flex;
-  list-style: none;
-}
-nav ul li a {
-    text-decoration: none;
-}
-nav ul li {
-    margin-right: 5rem;
-}
+ margin: auto;
+    justify-content: space-between;
 
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    
+    
+}
+.text-h1{
+color: aliceblue;
+}
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+nav ul li{
+    margin-right: 1.85rem;
+   
+    
+}
 .logo{
     display: flex;
     align-items: center;
+   
 }
 .logo img{
-    margin-right: 0.5rem;
-}
-/*---------------------------------responsive for navbar---------------------------------------*/
-@media screen and (max-width: 480px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
+   
+   margin-right: 0.5rem;
+} 
+/* responsive navbar */
+
+
+@media only screen and (max-width: 480px) {
+    nav{
+       flex-direction: column;
+      align-items: center;
     }
-    nav ul {
+    nav ul{
         flex-direction: column;
-        text-align: center;
-      }
+    text-align: center;
 }
-/*---------------------------------Mypetcontent------------------------------------------------*/
+
+}
+
+
+
+/* mypet content */
 .mypet-content{
     display: grid;
-    grid-template-columns: repeat(3,1fr)
+    grid-template-columns: repeat(3,1fr);
 }
 .box{
-    background-color:white;
-    margin:  30px 10px;
+    box-shadow: 0px 0px 3px 3px rgb(228, 223, 223);
+/* background-color: #ffffff;    */
+margin: 30px 10px;
 
-    border-radius: 10px;
-    box-shadow: 0px 0px 3px 0px aqua;
+border-radius: 10px;
 }
 .image{
-    width: 100%;
-
-    border-radius: 10px 10px 0 0;
+width: 100%;
+border-radius:10px 10px 0px 0px ;
 }
+
 .text-content{
     padding: 15px;
+}
+/* social */
+.boxs{
     
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  background-color: rgb(44, 40, 40);
+  
+  height: 250pX;
+  margin-top: 30px;
+  text-align: center;
 }
-/*---------------------------------responsive for mypet---------------------------------------*/
-@media screen and (max-width:786px) {
+.icon{
+    background-color: rgb(169, 255, 165);
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+
+
+
+
+/* responsive mypet */
+@media only screen and (max-width: 768px) {
+    .boxs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media only screen and (max-width: 768px) {
     .mypet-content{
         display: grid;
-        grid-template-columns: repeat(2,1fr)
+        grid-template-columns: repeat(2,1fr);
+    }
 }
-}
-@media screen and (max-width:480px) {
+@media only screen and (max-width: 480px) {
     .mypet-content{
         display: grid;
-        grid-template-columns: repeat(1,1fr)
+        grid-template-columns: repeat(1,1fr);
+    }
 }
-}
-/*---------------------------------section-hero----------------------------------------------*/
+
+
+/* hero section */
 .hero{
-background-image: url('https://www.peta.org/wp-content/uploads/2022/07/sleeping-white-rabbit.jpg') ;
-width: 1000px;
-height: 500px;
-background-repeat: no-repeat;
-background-size: cover;
-display: flex;
-justify-content: center;
-align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-image: url('https://www.peta.org/wp-content/uploads/2022/07/sleeping-white-rabbit.jpg');
+    
+   height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .text-hero{
-    margin: 0%;
-    color:white;
-    font-size: 68px;
+    margin: 0;
+    color: aliceblue;
+  font-size: 60px;
 }
-.circle {
-    border-radius: 100%;
-    width: 85px;
-}
+
+
+/* footer */
 footer{
-    background-color: #106050;
+    background-color: #000000;
+    color: aliceblue;
     text-align: center;
-    color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 0;
 }
+
